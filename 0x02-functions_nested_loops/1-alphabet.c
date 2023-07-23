@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* main – prints the alphabet in lowercase
-*follow by a new line
+* print_alphabat – prints the alphabet in lowercase
+*
 * Return: always 0
 */
 
@@ -12,7 +12,7 @@ void print_alphabet(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-	_putchar('i')
+	_putchar(i)
 	}
 	_putchar('\n');
 }

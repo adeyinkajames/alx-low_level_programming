@@ -6,8 +6,7 @@
  * @n: an iteger input pointer
  * Return: nothing
  */
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
-
 	*n = 98;
 }

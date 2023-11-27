@@ -15,17 +15,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t w;
 	ssize_t t;
 
-	//Open the file
+	/** Open the file*/
 	fd = open(filename, O_RDONLY);
 
 	if (fd == -1)
 		return (0);
 
-	//Read the contents of the file into a string.
+	/** Read the contents of the file into a string.*/
 	buf = malloc(sizeof(char) * letters);
 		t = read(fd, buf, letters);
 
-	//Print the contents of the file to the standard output.
+	/** Print the contents of the file to the standard output*/
 		w = write(STDOUT_FILENO, buf, t);
 
 		free(buf);
